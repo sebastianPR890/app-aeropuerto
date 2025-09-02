@@ -9,290 +9,310 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     
     <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    transition: all 0.3s ease;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: all 0.3s ease;
+        }
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background: linear-gradient(135deg, #87ceeb 0%, #b0e0e6 50%, #add8e6 100%);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #87ceeb 0%, #b0e0e6 50%, #add8e6 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
 
-/* Header principal */
-header {
-    background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
-    padding: 2rem 0;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-    text-align: center;
-}
+        /* Header principal */
+        header {
+            background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+            padding: 2rem 0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            text-align: center;
+        }
 
-header h1 {
-    color: white;
-    font-size: 3rem;
-    font-weight: 700;
-    margin: 0;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-}
+        header h1 {
+            color: white;
+            font-size: 3rem;
+            font-weight: 700;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
 
-header p {
-    color: rgba(255,255,255,0.9);
-    font-size: 1.2rem;
-    margin-top: 0.5rem;
-    font-weight: 300;
-}
+        header p {
+            color: rgba(255,255,255,0.9);
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+            font-weight: 300;
+        }
 
-/* Contenido principal */
-main {
-    flex: 1;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem 1rem;
-    width: 100%;
-}
+        /* Contenido principal */
+        main {
+            flex: 1;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+            width: 100%;
+        }
 
-.content-block {
-    background: white;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    margin-bottom: 2rem;
-}
+        .content-block {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
 
-/* Títulos */
-h1 {
-    color: #ff6b35;
-    margin-bottom: 2rem;
-    font-size: 2.5rem;
-    text-align: center;
-    font-weight: 700;
-}
+        /* Títulos */
+        h1 {
+            color: #ff6b35;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+            text-align: center;
+            font-weight: 700;
+        }
 
-h2 {
-    color: #ff6b35;
-    margin-bottom: 1rem;
-    font-size: 1.8rem;
-    font-weight: 600;
-}
+        h2 {
+            color: #ff6b35;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
 
-/* Formularios */
-form {
-    max-width: 600px;
-    margin: 0 auto;
-}
+        /* Formularios */
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
 
-label {
-    display: block;
-    margin-bottom: 0.5rem;
-    color: #ff6b35;
-    font-weight: 600;
-    font-size: 1.1rem;
-}
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #ff6b35;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
 
-input[type="text"] {
-    width: 100%;
-    padding: 0.8rem;
-    border: 2px solid #e9ecef;
-    border-radius: 8px;
-    font-size: 1rem;
-    margin-bottom: 1.5rem;
-    transition: all 0.3s ease;
-}
+        input[type="text"] {
+            width: 100%;
+            padding: 0.8rem;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+            transition: all 0.3s ease;
+        }
 
-input[type="text"]:focus {
-    outline: none;
-    border-color: #87ceeb;
-    box-shadow: 0 0 0 3px rgba(135, 206, 235, 0.3);
-    transform: scale(1.02);
-}
+        input[type="text"]:focus {
+            outline: none;
+            border-color: #87ceeb;
+            box-shadow: 0 0 0 3px rgba(135, 206, 235, 0.3);
+            transform: scale(1.02);
+        }
 
-button[type="submit"] {
-    background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
-    color: white;
-    padding: 1rem 2rem;
-    border: none;
-    border-radius: 8px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    cursor: pointer;
-    width: 100%;
-    transition: all 0.3s ease;
-}
+        button[type="submit"] {
+            background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.3s ease;
+        }
 
-button[type="submit"]:hover {
-    background: linear-gradient(135deg, #e55a2b 0%, #de7f0a 100%);
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(255, 107, 53, 0.4);
-}
+        button[type="submit"]:hover {
+            background: linear-gradient(135deg, #e55a2b 0%, #de7f0a 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 107, 53, 0.4);
+        }
 
-/* Área de resultados */
-#resultados {
-    background: linear-gradient(135deg, #e6f7ff 0%, #bae7ff 100%);
-    border: 2px solid #87ceeb;
-    border-radius: 12px;
-    padding: 2rem;
-    margin-top: 2rem;
-    text-align: center;
-}
+        /* Área de resultados */
+        #resultados {
+            background: linear-gradient(135deg, #e6f7ff 0%, #bae7ff 100%);
+            border: 2px solid #87ceeb;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-top: 2rem;
+            text-align: left; /* Cambiar de center a left */
+        }
 
-#resultados h2 {
-    color: #87ceeb;
-    margin-bottom: 1.5rem;
-    font-size: 1.8rem;
-}
+        #resultados h2 {
+            color: #87ceeb;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
 
-#resultados p {
-    margin-bottom: 1rem;
-    font-size: 1.1rem;
-    color: #2c3e50;
-}
+        #resultados p {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            color: #2c3e50;
+        }
 
-#resultados strong {
-    color: #ff6b35;
-    font-weight: 700;
-}
+        #resultados strong {
+            color: #ff6b35;
+            font-weight: 700;
+        }
 
-#distancia {
-    font-size: 1.5rem;
-    color: #ff6b35;
-    font-weight: 700;
-}
+        #distancia {
+            font-size: 1.5rem;
+            color: #ff6b35;
+            font-weight: 700;
+        }
 
-/* Área de errores */
-#error {
-    background: linear-gradient(135deg, #fdf2f2 0%, #fce4e4 100%);
-    border: 2px solid #e74c3c;
-    border-radius: 12px;
-    padding: 1.5rem;
-    margin-top: 2rem;
-    text-align: center;
-    font-size: 1.1rem;
-    font-weight: 500;
-}
+        /* Área de errores */
+        #error {
+            background: linear-gradient(135deg, #fdf2f2 0%, #fce4e4 100%);
+            border: 2px solid #e74c3c;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            text-align: center;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
 
-/* Footer */
-footer {
-    background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
-    color: white;
-    text-align: center;
-    padding: 2rem 1rem;
-    margin-top: auto;
-}
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: auto;
+        }
 
-footer p {
-    margin: 0.5rem 0;
-    font-size: 0.9rem;
-}
+        footer p {
+            margin: 0.5rem 0;
+            font-size: 0.9rem;
+        }
 
-footer a {
-    color: #87ceeb;
-    text-decoration: none;
-}
+        footer a {
+            color: #87ceeb;
+            text-decoration: none;
+        }
 
-footer a:hover {
-    color: #add8e6;
-}
+        footer a:hover {
+            color: #add8e6;
+        }
 
-footer i {
-    margin-left: 0.5rem;
-}
+        footer i {
+            margin-left: 0.5rem;
+        }
 
-/* Responsivo */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2.2rem;
-    }
+        /* Responsivo */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
 
-    header p {
-        font-size: 1rem;
-    }
+            header p {
+                font-size: 1rem;
+            }
 
-    main {
-        padding: 1rem;
-    }
+            main {
+                padding: 1rem;
+            }
 
-    .content-block {
-        padding: 1.5rem;
-    }
+            .content-block {
+                padding: 1.5rem;
+            }
 
-    h1 {
-        font-size: 2rem;
-    }
+            h1 {
+                font-size: 2rem;
+            }
 
-    form {
-        max-width: 100%;
-    }
-}
+            form {
+                max-width: 100%;
+            }
+        }
 
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 1.8rem;
-    }
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
 
-    header p {
-        font-size: 0.9rem;
-    }
+            header p {
+                font-size: 0.9rem;
+            }
 
-    h1 {
-        font-size: 1.8rem;
-    }
+            h1 {
+                font-size: 1.8rem;
+            }
 
-    .content-block {
-        padding: 1rem;
-    }
+            .content-block {
+                padding: 1rem;
+            }
 
-    input[type="text"] {
-        padding: 0.7rem;
-        margin-bottom: 1rem;
-    }
+            input[type="text"] {
+                padding: 0.7rem;
+                margin-bottom: 1rem;
+            }
 
-    button[type="submit"] {
-        padding: 0.8rem 1.5rem;
-        font-size: 1rem;
-    }
+            button[type="submit"] {
+                padding: 0.8rem 1.5rem;
+                font-size: 1rem;
+            }
 
-    #resultados,
-    #error {
-        padding: 1.5rem;
-        margin-top: 1.5rem;
-    }
-}
+            #resultados,
+            #error {
+                padding: 1.5rem;
+                margin-top: 1.5rem;
+            }
+        }
 
-/* Accesibilidad */
-input[type="text"]:focus,
-button[type="submit"]:focus {
-    outline: 2px solid #87ceeb;
-    outline-offset: 2px;
-}
+        /* Accesibilidad */
+        input[type="text"]:focus,
+        button[type="submit"]:focus {
+            outline: 2px solid #87ceeb;
+            outline-offset: 2px;
+        }
 
-footer a:focus {
-    outline: 2px solid #87ceeb;
-    outline-offset: 2px;
-}
+        footer a:focus {
+            outline: 2px solid #87ceeb;
+            outline-offset: 2px;
+        }
 
-/* Animaciones */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+        /* Animaciones */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
-#resultados[style*="block"],
-#error[style*="block"] {
-    animation: fadeIn 0.5s ease;
-}
+        #resultados[style*="block"],
+        #error[style*="block"] {
+            animation: fadeIn 0.5s ease;
+        }
+
+        #resultados h3 {
+            color: #ff6b35;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        #resultados h4 {
+            color: #ff6b35;
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+
+        /* Responsivo para grid de resultados */
+        @media (max-width: 768px) {
+            #resultados div[style*="grid-template-columns"] {
+                grid-template-columns: 1fr !important;
+                gap: 1rem !important;
+            }
+        }
     </style>
 </head>
 <body>
@@ -316,7 +336,7 @@ footer a:focus {
                     maxlength="3"
                     style="text-transform: uppercase;"
                     required
-                ></input>
+                >
                 
                 <label for="aeropuerto_destino"><i class="bi bi-geo-alt-fill"></i> Aeropuerto Destino:</label>
                 <input 
@@ -327,7 +347,7 @@ footer a:focus {
                     maxlength="3" 
                     style="text-transform: uppercase;"
                     required
-                ></input>
+                >
                 
                 <button type="submit"><i class="bi bi-calculator"></i> Calcular Distancia</button>
             </form>
@@ -335,9 +355,42 @@ footer a:focus {
             <!-- ÁREA DE RESULTADOS -->
             <div id="resultados" style="display: none;">
                 <h2><i class="bi bi-check-circle"></i> Resultados:</h2>
-                <p><strong>Origen:</strong> <span id="origen"></span></p>
-                <p><strong>Destino:</strong> <span id="destino"></span></p>
-                <p><strong>Distancia:</strong> <span id="distancia"></span> km</p>
+                
+                <!-- Información de Aeropuertos -->
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2rem;">
+                    <div style="background: rgba(255, 107, 53, 0.1); padding: 1.5rem; border-radius: 8px;">
+                        <h3 style="color: #ff6b35; margin-bottom: 1rem;"><i class="bi bi-airplane-engines"></i> Origen</h3>
+                        <p><strong>Código:</strong> <span id="codigo_origen"></span></p>
+                        <p><strong>Aeropuerto:</strong> <span id="nombre_origen"></span></p>
+                        <p><strong>Ciudad:</strong> <span id="ciudad_origen"></span></p>
+                    </div>
+                    
+                    <div style="background: rgba(135, 206, 235, 0.1); padding: 1.5rem; border-radius: 8px;">
+                        <h3 style="color: #87ceeb; margin-bottom: 1rem;"><i class="bi bi-airplane-engines-fill"></i> Destino</h3>
+                        <p><strong>Código:</strong> <span id="codigo_destino"></span></p>
+                        <p><strong>Aeropuerto:</strong> <span id="nombre_destino"></span></p>
+                        <p><strong>Ciudad:</strong> <span id="ciudad_destino"></span></p>
+                    </div>
+                </div>
+                
+                <!-- Distancias -->
+                <div style="background: rgba(255, 255, 255, 0.8); padding: 1.5rem; border-radius: 8px; border: 2px solid #ff6b35;">
+                    <h3 style="color: #ff6b35; margin-bottom: 1rem; text-align: center;"><i class="bi bi-rulers"></i> Distancias</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                        <div style="text-align: center; padding: 1rem; background: white; border-radius: 6px;">
+                            <h4 style="color: #ff6b35; margin-bottom: 0.5rem;">Kilómetros</h4>
+                            <p style="font-size: 1.8rem; font-weight: bold; color: #2c3e50;"><span id="distancia_km"></span> km</p>
+                        </div>
+                        <div style="text-align: center; padding: 1rem; background: white; border-radius: 6px;">
+                            <h4 style="color: #87ceeb; margin-bottom: 0.5rem;">Millas</h4>
+                            <p style="font-size: 1.8rem; font-weight: bold; color: #2c3e50;"><span id="distancia_millas"></span> mi</p>
+                        </div>
+                        <div style="text-align: center; padding: 1rem; background: white; border-radius: 6px;">
+                            <h4 style="color: #27ae60; margin-bottom: 0.5rem;">Millas Náuticas</h4>
+                            <p style="font-size: 1.8rem; font-weight: bold; color: #2c3e50;"><span id="distancia_nauticas"></span> nm</p>
+                        </div>
+                    </div>
+                </div>
             </div>
             
             <!-- ÁREA DE ERRORES -->
@@ -374,16 +427,19 @@ footer a:focus {
             .then(response => response.json())
             .then(data => {
                 if (data.success) {
-                    // Mostrar resultados exitosos
-                    document.getElementById('origen').textContent = 
-                        data.aeropuerto_origen.codigo + ' - ' + data.aeropuerto_origen.nombre;
-                    
-                    document.getElementById('destino').textContent = 
-                        data.aeropuerto_destino.codigo + ' - ' + data.aeropuerto_destino.nombre;
-                    
-                    document.getElementById('distancia').textContent = data.distancia_km;
+                    // Mostrar datos del aeropuerto origen
+                    document.getElementById('codigo_origen').textContent = data.aeropuerto_origen.codigo;
+                    document.getElementById('nombre_origen').textContent = data.aeropuerto_origen.nombre;
+                    document.getElementById('ciudad_origen').textContent = data.aeropuerto_origen.ciudad;
+                    // Mostrar datos del aeropuerto destino
+                    document.getElementById('codigo_destino').textContent = data.aeropuerto_destino.codigo;
+                    document.getElementById('nombre_destino').textContent = data.aeropuerto_destino.nombre;
+                    document.getElementById('ciudad_destino').textContent = data.aeropuerto_destino.ciudad;
+                    // Mostrar todas las distancias
+                    document.getElementById('distancia_km').textContent = data.distancia_km;
+                    document.getElementById('distancia_millas').textContent = data.distancia_millas;
+                    document.getElementById('distancia_nauticas').textContent = data.distancia_millas_nauticas;
                     document.getElementById('resultados').style.display = 'block';
-                    
                 } else {
                     // Mostrar error
                     document.getElementById('error').textContent = data.error;
