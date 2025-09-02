@@ -24,12 +24,12 @@ class AirportDistanceForm(forms.Form):
         label='Aeropuerto de destino'
     )
     def clean_aeropuerto_origen(self):
-        data = self.cleaned_data['aeropuerto_origen']
-        if len(data) != 3 or not data.isalpha() or not data.isupper():
+        codigo = self.cleaned_data['aeropuerto_origen']
+        if len(codigo) != 3 or not codigo.isalpha() or not codigo.isupper():
             raise forms.ValidationError("El código de aeropuerto debe tener 3 letras mayúsculas.")
-        return data
+        return codigo
     def clean_aeropuerto_destino(self):
-        data = self.cleaned_data['aeropuerto_destino']
-        if len(data) != 3 or not data.isalpha() or not data.isupper():
+        codigo = self.cleaned_data['aeropuerto_destino']
+        if len(codigo) != 3 or not codigo.isalpha() or not codigo.isupper():
             raise forms.ValidationError("El código de aeropuerto debe tener 3 letras mayúsculas.")
-        return data
+        return codigo

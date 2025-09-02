@@ -13,9 +13,8 @@ def airport_distance_view(request):
 def calculate_distance(request):
     if request.method == 'POST':
         try:
-            aeropuerto_origen = request.POST.get('aeropuerto_origen')
-            aeropuerto_destino = request.POST.get('aeropuerto_destino')
-            
+            aeropuerto_origen = request.POST.get('aeropuerto_origen','').strip().upper()
+            aeropuerto_destino = request.POST.get('aeropuerto_destino','').strip().upper()
             if not aeropuerto_origen or not aeropuerto_destino:
                 return JsonResponse({'error': 'Ambos Campos deben ser rellenados.'})
             
